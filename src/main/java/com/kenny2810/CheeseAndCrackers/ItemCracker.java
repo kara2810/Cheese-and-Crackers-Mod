@@ -5,6 +5,9 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+
+import com.kenny2810.CheeseAndCrackers.*;
+
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
@@ -14,15 +17,18 @@ import com.kenny2810.CheeseAndCrackers.Entities.EntityCracker;
 
 public class ItemCracker extends Item
 {
+	public static String modid="CheeseAndCrackers";
     public ItemCracker(int par1)
     {
         super();
+        setUnlocalizedName("Cracker");
+        setTextureName(modid + ":" + "Cracker");
         this.maxStackSize = 16;
         this.setCreativeTab(CreativeTabs.tabMisc);
     }
     public void registerIcons(IIconRegister iconRegister)
     {
-      itemIcon = iconRegister.registerIcon("cheeseandcrackers:Cracker");
+      itemIcon = iconRegister.registerIcon("CheeseAndCrackers:Cracker");
     }
     /**
      * Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
@@ -46,8 +52,9 @@ public class ItemCracker extends Item
     public void onUpdate(ItemStack itemstack, World world, Entity entity, int i, boolean flag)
     {
     	EntityPlayer player = (EntityPlayer) entity;
-    if(player.getCurrentEquippedItem() !=null && player.getCurrentEquippedItem().itemID == this.itemID)
-    {
+    	ItemStack crackerStack = new ItemStack(CheeseAndCrackersMain.Cracker);
+    	ItemStack equipped = player.getCurrentEquippedItem();
+    	if(equipped == crackerStack) {
     player.addPotionEffect((new PotionEffect(Potion.damageBoost.getId(), 3, 4)));
     player.addPotionEffect((new PotionEffect(Potion.jump.getId(), 3, 4)));
     player.addPotionEffect((new PotionEffect(Potion.moveSpeed.getId(), 3, 4)));

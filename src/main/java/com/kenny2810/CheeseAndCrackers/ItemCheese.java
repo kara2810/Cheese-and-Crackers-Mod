@@ -1,31 +1,29 @@
 package com.kenny2810.CheeseAndCrackers;
 
 
-import CheeseAndCrackers.Entities.EntityCheese;
-import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.projectile.EntityEgg;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
-import net.minecraft.src.ModLoader;
 import net.minecraft.world.World;
+
+import com.kenny2810.CheeseAndCrackers.Entities.EntityCheese;
 
 public class ItemCheese extends Item
 {
     public ItemCheese(int par1)
     {
-        super(par1);
+        super();
         this.maxStackSize = 16;
         this.setCreativeTab(CreativeTabs.tabMisc);
     }
-    public void registerIcons(IconRegister iconRegister)
-    {
-      itemIcon = iconRegister.registerIcon("cheeseandcrackers:Cheese");
-    }
+    
+
     /**
      * Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
      */
@@ -48,8 +46,9 @@ public class ItemCheese extends Item
     public void onUpdate(ItemStack itemstack, World world, Entity entity, int i, boolean flag)
     {
     	EntityPlayer player = (EntityPlayer) entity;
-    if(player.getCurrentEquippedItem() !=null && player.getCurrentEquippedItem().itemID == this.itemID)
-    {
+    	ItemStack cheeseStack = new ItemStack(CheeseAndCrackersMain.Cheese);
+    	ItemStack equipped = player.getCurrentEquippedItem();
+    	if(equipped == cheeseStack) {
     player.addPotionEffect((new PotionEffect(Potion.field_76444_x.getId(), 3, 4)));
     player.addPotionEffect((new PotionEffect(Potion.regeneration.getId(), 3, 4)));
     player.addPotionEffect((new PotionEffect(Potion.resistance.getId(), 3, 4)));

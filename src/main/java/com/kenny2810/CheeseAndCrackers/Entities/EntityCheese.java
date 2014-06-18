@@ -1,4 +1,4 @@
-package CheeseAndCrackers.Entities;
+package com.kenny2810.CheeseAndCrackers.Entities;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityTNTPrimed;
