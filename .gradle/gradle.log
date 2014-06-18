@@ -6,37 +6,28 @@
  MCP Data version : unknown
 ****************************
 :extractUserDev
-Download http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.7.2-10.12.1.1110/forge-1.7.2-10.12.1.1110-userdev.jar
 :getAssetsIndex
 :getAssets
 :copyAssets
 :extractNatives
-:genSrgs
+:genSrgs SKIPPED
 :downloadMcpTools
 :downloadClient SKIPPED
 :downloadServer SKIPPED
 :mergeJars SKIPPED
-:deobfuscateJar
-Applying SpecialSource...
-INFO: merging AccessMap net/minecraft/item/ItemBlock/field_150939_a from AccessChange(clear=0, set=0, vis=1) with AccessChange(clear=0, set=0, vis=1)
-Applying Exceptor...
-:decompile
-:processSources
-Injecting fml files
-Applying fml patches
-Applying forge patches
-:remapJar
-:extractMinecraftSrc
-:recompMinecraftwarning: [options] bootstrap class path not set in conjunction with -source 1.6
-Note: Some input files use or override a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-Note: Some input files use unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-1 warning
-
-:repackMinecraft
+:deobfuscateJar SKIPPED
+:decompile SKIPPED
+:processSources SKIPPED
+:remapJar SKIPPED
+:extractMinecraftSrc SKIPPED
+:recompMinecraft SKIPPED
+:repackMinecraft SKIPPED
 :setupDecompWorkspace
+:eclipseClasspath
+:eclipseJdt
+:eclipseProject
+:eclipse
 
 BUILD SUCCESSFUL
 
-Total time: 4 mins 58.547 secs
+Total time: 1 mins 20.711 secs
