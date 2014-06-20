@@ -44,9 +44,9 @@ public class CheeseAndCrackersMain
  
         	
         	Cracker = new ItemCracker(5962).setMaxStackSize(16)
-                    .setUnlocalizedName("Cracker").setTextureName("CheeseAndCrackers:Cracker");
+                    .setUnlocalizedName("Cracker");
         	Cheese = new ItemCheese(5963).setMaxStackSize(16)
-                    .setUnlocalizedName("Cheese").setTextureName("CheeseAndCrackers:Cheese");
+                    .setUnlocalizedName("Cheese");
             
         }
         

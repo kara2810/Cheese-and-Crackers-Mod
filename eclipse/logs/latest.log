@@ -1,13 +1,13 @@
-[18:40:26] [main/INFO]: Setting user: Player203
-[18:40:27] [Client thread/INFO]: LWJGL Version: 2.9.0
-[18:40:30] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Cheese And Crackers
-[18:40:30] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: %s in %s
-[18:40:31] [Sound Library Loader/INFO]: Sound engine started
-[18:40:31] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[18:40:31] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[18:40:31] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Cheese And Crackers
-[18:40:32] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: %s in %s
-[18:40:32] [Client thread/ERROR]: Using missing texture, unable to load cheeseandcrackers:textures/items/Cracker.png
+[13:02:03] [main/INFO]: Setting user: Player937
+[13:02:04] [Client thread/INFO]: LWJGL Version: 2.9.0
+[13:02:10] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Cheese And Crackers
+[13:02:10] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: %s in %s
+[13:02:10] [Sound Library Loader/INFO]: Sound engine started
+[13:02:12] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[13:02:12] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[13:02:12] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Cheese And Crackers
+[13:02:12] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: %s in %s
+[13:02:13] [Client thread/ERROR]: Using missing texture, unable to load cheeseandcrackers:textures/items/Cracker.png
 java.io.FileNotFoundException: cheeseandcrackers:textures/items/Cracker.png
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:71) ~[SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
@@ -27,10 +27,9 @@ java.io.FileNotFoundException: cheeseandcrackers:textures/items/Cracker.png
 	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_25]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-[18:40:32] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/items/MISSING_ICON_ITEM_4097_Cheese.png
-java.io.FileNotFoundException: minecraft:textures/items/MISSING_ICON_ITEM_4097_Cheese.png
-	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+[13:02:13] [Client thread/ERROR]: Using missing texture, unable to load cheeseandcrackers:textures/items/Cheese.png
+java.io.FileNotFoundException: cheeseandcrackers:textures/items/Cheese.png
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:71) ~[SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
 	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
@@ -48,23 +47,29 @@ java.io.FileNotFoundException: minecraft:textures/items/MISSING_ICON_ITEM_4097_C
 	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.7.0_25]
 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
-[18:40:32] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[18:40:32] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[18:40:33] [Sound Library Loader/INFO]: Sound engine started
-[18:40:33] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
-[18:41:12] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
-[18:41:12] [Server thread/INFO]: Generating keypair
-[18:41:12] [Server thread/INFO]: Preparing start region for level 0
-[18:41:14] [Server thread/INFO]: Player203[local:E:59eabb89] logged in with entity id 374 at (-210.95408016754158, 70.0, 106.86927890766883)
-[18:41:14] [Server thread/INFO]: Player203 joined the game
-[18:41:16] [Server thread/INFO]: Player203 has just earned the achievement [Taking Inventory]
-[18:41:16] [Client thread/INFO]: [CHAT] Player203 has just earned the achievement [Taking Inventory]
-[18:41:21] [Client thread/INFO]: Stopping!
-[18:41:21] [Server thread/INFO]: Stopping server
-[18:41:21] [Server thread/INFO]: Saving players
-[18:41:21] [Server thread/INFO]: Saving worlds
-[18:41:21] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[18:41:21] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[18:41:21] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[18:41:22] [Client Shutdown Thread/INFO]: Stopping server
-[18:41:22] [Client Shutdown Thread/INFO]: Saving players
+[13:02:13] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[13:02:13] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[13:02:14] [Sound Library Loader/INFO]: Sound engine started
+[13:02:17] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[13:02:28] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[13:02:28] [Server thread/INFO]: Generating keypair
+[13:02:29] [Server thread/INFO]: Preparing start region for level 0
+[13:02:30] [Server thread/INFO]: Preparing spawn area: 56%
+[13:02:31] [Server thread/INFO]: Player937[local:E:f8d5439a] logged in with entity id 362 at (-207.812881199964, 71.66909587024257, 98.62860398753199)
+[13:02:31] [Server thread/INFO]: Player937 joined the game
+[13:02:32] [Server thread/INFO]: Saving and pausing game...
+[13:02:32] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
+[13:02:32] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
+[13:02:32] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
+[13:03:46] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
+[13:03:59] [Server thread/INFO]: Player937 has just earned the achievement [Taking Inventory]
+[13:03:59] [Client thread/INFO]: [CHAT] Player937 has just earned the achievement [Taking Inventory]
+[13:04:13] [Client thread/INFO]: Stopping!
+[13:04:13] [Server thread/INFO]: Stopping server
+[13:04:13] [Server thread/INFO]: Saving players
+[13:04:13] [Server thread/INFO]: Saving worlds
+[13:04:13] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
+[13:04:13] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
+[13:04:13] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
+[13:04:13] [Client Shutdown Thread/INFO]: Stopping server
+[13:04:13] [Client Shutdown Thread/INFO]: Saving players
