@@ -4,6 +4,9 @@ package com.kenny2810.CheeseAndCrackers;
 // It's not pruned between full class postings, unlike other tutorial code.
 import java.util.logging.Logger;
 
+import com.kenny2810.CheeseAndCrackers.Items.ItemCheese;
+import com.kenny2810.CheeseAndCrackers.Items.ItemCracker;
+
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

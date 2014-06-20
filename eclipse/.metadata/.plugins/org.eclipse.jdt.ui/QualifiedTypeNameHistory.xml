@@ -2,4 +2,7 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="net.minecraftforge.common.config.Configuration"/>
 <fullyQualifiedTypeName name="net.minecraft.init.Items"/>
+<fullyQualifiedTypeName name="com.kenny2810.CheeseAndCrackers.CheeseAndCrackersMain"/>
+<fullyQualifiedTypeName name="com.kenny2810.CheeseAndCrackers.Items.ItemCracker"/>
+<fullyQualifiedTypeName name="com.kenny2810.CheeseAndCrackers.Items.ItemCheese"/>
 </qualifiedTypeNameHistroy>
