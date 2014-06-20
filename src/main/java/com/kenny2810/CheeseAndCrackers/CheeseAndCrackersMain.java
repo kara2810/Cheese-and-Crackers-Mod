@@ -27,6 +27,7 @@ public class CheeseAndCrackersMain
 	public static Logger logger;
 	 public static int CheeseConfig;
 	    public static int CrackerConfig;
+	    public static final String MODID = "CheeseAndCrackers";
 
 	
 
@@ -43,10 +44,10 @@ public class CheeseAndCrackersMain
         	// Configuration goes here.
  
         	
-        	Cracker = new ItemCracker(5962).setMaxStackSize(16)
-                    .setUnlocalizedName("Cracker").setTextureName("CheeseAndCrackers:Cracker");
-        	Cheese = new ItemCheese(5963).setMaxStackSize(16)
-                    .setUnlocalizedName("Cheese").setTextureName("CheeseAndCrackers:Cheese");
+        	Cracker = new ItemCracker().setUnlocalizedName("Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
+        	Cheese = new ItemCheese().setUnlocalizedName("Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cheese");
+        	GameRegistry.registerItem(Cracker, Cracker.getUnlocalizedName().substring(5));
+        	GameRegistry.registerItem(Cheese, Cheese.getUnlocalizedName().substring(5));
             
         }
         
@@ -82,11 +83,7 @@ public class CheeseAndCrackersMain
         }
         
         
-        @EventHandler
-        public void postInit(FMLPostInitializationEvent event) 
-        {
-                // Stub Method
-        }
+     
       
     }
 

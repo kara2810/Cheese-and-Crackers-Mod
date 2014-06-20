@@ -18,7 +18,7 @@ import com.kenny2810.CheeseAndCrackers.Entities.EntityCracker;
 public class ItemCracker extends Item
 {
 	public static String modid="CheeseAndCrackers";
-    public ItemCracker(int par1)
+    public ItemCracker()
     {
         super();
         setUnlocalizedName("Cracker");

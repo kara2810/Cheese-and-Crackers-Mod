@@ -16,7 +16,7 @@ import com.kenny2810.CheeseAndCrackers.Entities.EntityCheese;
 
 public class ItemCheese extends Item
 {
-    public ItemCheese(int par1)
+    public ItemCheese()
     {
         super();
         this.maxStackSize = 16;

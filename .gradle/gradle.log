@@ -6,28 +6,19 @@
  MCP Data version : unknown
 ****************************
 :extractUserDev
-:getAssetsIndex
-:getAssets
-:copyAssets
-:extractNatives
-:genSrgs SKIPPED
-:downloadMcpTools
-:downloadClient SKIPPED
-:downloadServer SKIPPED
-:mergeJars SKIPPED
-:deobfuscateJar SKIPPED
-:decompile SKIPPED
-:processSources SKIPPED
-:remapJar SKIPPED
-:extractMinecraftSrc SKIPPED
-:recompMinecraft SKIPPED
-:repackMinecraft SKIPPED
-:setupDecompWorkspace
-:eclipseClasspath
-:eclipseJdt
-:eclipseProject
-:eclipse
 
-BUILD SUCCESSFUL
+FAILURE: Build failed with an exception.
 
-Total time: 1 mins 20.711 secs
+* What went wrong:
+Could not resolve all dependencies for configuration ':userDevPackageDepConfig'.
+> Could not resolve net.minecraftforge:forge:1.7.2-10.12.1.1121.
+  Required by:
+      com.yourname.modid:Cheese-and-Crackers-Mod:1.0
+   > Could not GET 'https://libraries.minecraft.net/net/minecraftforge/forge/1.7.2-10.12.1.1121/forge-1.7.2-10.12.1.1121.pom'. Received status code 403 from server: Forbidden
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 12.237 secs
