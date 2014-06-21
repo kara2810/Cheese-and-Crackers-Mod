@@ -5,4 +5,6 @@
 <fullyQualifiedTypeName name="com.kenny2810.CheeseAndCrackers.CheeseAndCrackersMain"/>
 <fullyQualifiedTypeName name="com.kenny2810.CheeseAndCrackers.Items.ItemCracker"/>
 <fullyQualifiedTypeName name="com.kenny2810.CheeseAndCrackers.Items.ItemCheese"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
+<fullyQualifiedTypeName name="com.kenny2810.CheeseAndCrackers.Items.LisasCracker"/>
 </qualifiedTypeNameHistroy>
