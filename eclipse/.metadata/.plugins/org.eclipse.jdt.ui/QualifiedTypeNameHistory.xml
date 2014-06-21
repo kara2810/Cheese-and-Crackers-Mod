@@ -7,4 +7,7 @@
 <fullyQualifiedTypeName name="com.kenny2810.CheeseAndCrackers.Items.ItemCheese"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
 <fullyQualifiedTypeName name="com.kenny2810.CheeseAndCrackers.Items.LisasCracker"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+<fullyQualifiedTypeName name="net.minecraftforge.event.entity.living.LivingDropsEvent"/>
 </qualifiedTypeNameHistroy>
