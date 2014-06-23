@@ -10,4 +10,5 @@
 <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
 <fullyQualifiedTypeName name="net.minecraftforge.event.entity.living.LivingDropsEvent"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemFood"/>
 </qualifiedTypeNameHistroy>
