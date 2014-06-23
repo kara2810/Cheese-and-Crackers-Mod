@@ -1,46 +1,27 @@
-[13:46:19] [main/INFO]: Setting user: Player187
-[13:46:20] [Client thread/INFO]: LWJGL Version: 2.9.0
-[13:46:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Cheese And Crackers
-[13:46:24] [Sound Library Loader/INFO]: Sound engine started
-[13:46:25] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[13:46:25] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[13:46:25] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Cheese And Crackers
-[13:46:25] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[13:46:25] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[13:46:26] [Sound Library Loader/INFO]: Sound engine started
-[13:46:27] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
-[13:46:30] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
-[13:46:30] [Server thread/INFO]: Generating keypair
-[13:46:31] [Server thread/INFO]: Preparing start region for level 0
-[13:46:32] [Server thread/INFO]: Preparing spawn area: 95%
-[13:46:32] [Server thread/INFO]: Player187[local:E:bd2af1ae] logged in with entity id 175 at (-461.2642113693387, 70.0, 42.272669926787664)
-[13:46:32] [Server thread/INFO]: Player187 joined the game
-[13:46:33] [Server thread/INFO]: Saving and pausing game...
-[13:46:33] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[13:46:33] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[13:46:33] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[13:46:45] [Server thread/INFO]: Player187 has just earned the achievement [Taking Inventory]
-[13:46:45] [Client thread/INFO]: [CHAT] Player187 has just earned the achievement [Taking Inventory]
-[13:46:49] [Server thread/INFO]: [Player187: Set own game mode to Creative Mode]
-[13:46:49] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[13:48:16] [Server thread/INFO]: Saving and pausing game...
-[13:48:16] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[13:48:16] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[13:48:16] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[13:57:06] [Server thread/INFO]: [Player187: Set own game mode to Survival Mode]
-[13:57:06] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[14:01:34] [Server thread/INFO]: [Player187: Set own game mode to Creative Mode]
-[14:01:34] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[14:01:53] [Server thread/INFO]: [Player187: Set own game mode to Survival Mode]
-[14:01:53] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[14:02:38] [Server thread/INFO]: Player187 was slain by Zombie
-[14:02:38] [Client thread/INFO]: [CHAT] Player187 was slain by Zombie
-[14:03:10] [Server thread/INFO]: [Player187: Set own game mode to Creative Mode]
-[14:03:10] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[14:04:35] [Server thread/INFO]: [Player187: Set own game mode to Survival Mode]
-[14:04:35] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[14:05:47] [Server thread/WARN]: Player187 moved wrongly!
-[14:07:08] [Server thread/INFO]: [Player187: Set own game mode to Creative Mode]
-[14:07:08] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[14:07:16] [Server thread/INFO]: [Player187: Set own game mode to Survival Mode]
-[14:07:16] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[00:46:53] [main/INFO]: Setting user: Player812
+[00:46:54] [Client thread/INFO]: LWJGL Version: 2.9.0
+[00:46:57] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Cheese And Crackers
+[00:46:58] [Sound Library Loader/INFO]: Sound engine started
+[00:46:58] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[00:46:58] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[00:46:58] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Cheese And Crackers
+[00:46:58] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[00:46:59] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[00:46:59] [Sound Library Loader/INFO]: Sound engine started
+[00:47:00] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[00:47:03] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[00:47:03] [Server thread/INFO]: Generating keypair
+[00:47:03] [Server thread/INFO]: Preparing start region for level 0
+[00:47:04] [Server thread/INFO]: Player812[local:E:5736348b] logged in with entity id 180 at (-467.7399238785389, 63.0, 68.06984239132161)
+[00:47:04] [Server thread/INFO]: Player812 joined the game
+[00:47:50] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
+[00:47:51] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
+[00:47:54] [Client thread/INFO]: Stopping!
+[00:47:54] [Server thread/INFO]: Stopping server
+[00:47:54] [Server thread/INFO]: Saving players
+[00:47:54] [Server thread/INFO]: Saving worlds
+[00:47:54] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
+[00:47:54] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
+[00:47:54] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
+[00:47:54] [Client Shutdown Thread/INFO]: Stopping server
+[00:47:54] [Client Shutdown Thread/INFO]: Saving players
