@@ -11,4 +11,8 @@
 <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
 <fullyQualifiedTypeName name="net.minecraftforge.event.entity.living.LivingDropsEvent"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemFood"/>
+<fullyQualifiedTypeName name="com.kenny2810.CheeseAndCrackers.Items.Crackers.ItemCracker"/>
+<fullyQualifiedTypeName name="com.kenny2810.CheeseAndCrackers.Entities.EntityCheese"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
+<fullyQualifiedTypeName name="net.minecraft.potion.Potion"/>
 </qualifiedTypeNameHistroy>
