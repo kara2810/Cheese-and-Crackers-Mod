@@ -4,9 +4,8 @@ package com.kenny2810.CheeseAndCrackers;
 // It's not pruned between full class postings, unlike other tutorial code.
 import java.util.logging.Logger;
 
-import com.kenny2810.CheeseAndCrackers.Items.ItemCheese;
-import com.kenny2810.CheeseAndCrackers.Items.ItemCracker;
 import com.kenny2810.CheeseAndCrackers.Items.*;
+
 import net.minecraft.entity.*;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
@@ -27,7 +26,11 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class CheeseAndCrackersMain 
 {
 	
-	public static Item Cracker;
+	public static Item Cracker = new ItemCracker(2, false);
+	public static Item StrenghtCracker = new StrenghtCracker();
+	public static Item JumpBoostCracker = new JumpBoostCracker();
+	public static Item SpeedCracker = new SpeedCracker();
+	public static Item InvisCracker = new InvisCracker();
 	public static Item Cheese;
 	public static Item LisasCracker;
 	public static Item KiniCracker;
@@ -92,7 +95,11 @@ public class CheeseAndCrackersMain
         	KennyCracker = new KennyCracker().setUnlocalizedName("Kenny`s Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
         	KiKiCracker = new KiKiCracker().setUnlocalizedName("Kiki`s Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
         	KiniCracker = new KiniCracker().setUnlocalizedName("Rune`s Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
-        	Cracker = new ItemCracker().setUnlocalizedName("Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
+        	Cracker = new ItemCracker(2, false).setUnlocalizedName("Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
+        	StrenghtCracker = new StrenghtCracker().setUnlocalizedName("Strenght Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
+        	SpeedCracker = new SpeedCracker().setUnlocalizedName("Speed Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
+        	InvisCracker = new InvisCracker().setUnlocalizedName("Invisibility Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
+        	JumpBoostCracker = new JumpBoostCracker().setUnlocalizedName("Jump Boost Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
         	Cheese = new ItemCheese().setUnlocalizedName("Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cheese");
         	
             
@@ -103,12 +110,16 @@ public class CheeseAndCrackersMain
         {
        	
         	GameRegistry.registerItem(Cracker, "Cracker");
-        	GameRegistry.registerItem(Cheese, "Cheese");
+        	GameRegistry.registerItem(StrenghtCracker, "Strenght Cracker");
+        	GameRegistry.registerItem(SpeedCracker, "Speed Cracker");
+        	GameRegistry.registerItem(InvisCracker, "Invisibility Cracker");
+        	GameRegistry.registerItem(JumpBoostCracker, "Jump Boost Cracker");
         	GameRegistry.registerItem(CloudyCracker, "Cloudy`s Cracker");
         	GameRegistry.registerItem(KennyCracker, "Kenny`s Cracker");
         	GameRegistry.registerItem(KiniCracker, "Rune`s Cracker");
         	GameRegistry.registerItem(LisasCracker, "Lisa`s Cracker");
         	GameRegistry.registerItem(KiKiCracker, "Kiki`s Cracker");
+        	GameRegistry.registerItem(Cheese, "Cheese");
                 ItemStack wheatStack = new ItemStack(Items.wheat);
             	ItemStack waterBucketStack = new ItemStack(Items.water_bucket);
             	ItemStack lavaBucketStack = new ItemStack(Items.lava_bucket);
