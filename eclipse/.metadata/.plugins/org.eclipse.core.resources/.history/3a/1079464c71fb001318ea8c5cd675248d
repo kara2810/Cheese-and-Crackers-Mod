@@ -1,0 +1,18 @@
+package com.kenny2810.CheeseAndCrackers.Block;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+
+public class blazeBlock extends Block{
+
+	public blazeBlock(Material rock) {
+		super(rock);
+		setHardness(4.0F); // 33% harder than diamond
+		setStepSound(Block.soundTypePiston); // sounds got renamed, look in Block class for what blocks have what sounds
+		setBlockName("BlazeRod Block"); // changed in 1.7
+		setCreativeTab(CreativeTabs.tabBlock);
+		// TODO Auto-generated constructor stub
+	}
+
+}

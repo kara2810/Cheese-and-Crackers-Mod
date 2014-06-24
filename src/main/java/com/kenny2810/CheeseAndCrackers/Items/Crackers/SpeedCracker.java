@@ -25,7 +25,7 @@ import com.kenny2810.CheeseAndCrackers.Entities.EntityCracker;
 	        setUnlocalizedName("Speed Cracker");
 	        setTextureName(modid + ":" + "Cracker");
 	        this.maxStackSize = 16;
-	        this.setCreativeTab(CreativeTabs.tabMisc);
+	        this.setCreativeTab(CheeseAndCrackersMain.CheeseAndCrackersTab);
 	    }
 	    public void registerIcons(IIconRegister iconRegister)
 	    {
@@ -40,7 +40,7 @@ import com.kenny2810.CheeseAndCrackers.Entities.EntityCracker;
 	    	ItemStack crackerStack = new ItemStack(CheeseAndCrackersMain.SpeedCracker);
 	    	
 	    	if(player.getCurrentEquippedItem() != null && (player.getCurrentEquippedItem().isItemEqual(crackerStack))){
-	    player.addPotionEffect((new PotionEffect(Potion.moveSpeed.getId(), 3, 4)));
+	    player.addPotionEffect((new PotionEffect(Potion.moveSpeed.getId(), 1, 4)));
 	    
 	    }
 	    else

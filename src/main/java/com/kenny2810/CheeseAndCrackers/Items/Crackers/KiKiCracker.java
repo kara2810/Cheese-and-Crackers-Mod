@@ -6,7 +6,9 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+
 import com.kenny2810.CheeseAndCrackers.*;
+
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
@@ -23,7 +25,7 @@ import com.kenny2810.CheeseAndCrackers.Entities.EntityCracker;
 	        setUnlocalizedName("Kiki`s Cracker");
 	        setTextureName(modid + ":" + "Cracker");
 	        this.maxStackSize = 16;
-	        this.setCreativeTab(CreativeTabs.tabMisc);
+	        this.setCreativeTab(CheeseAndCrackersMain.CheeseAndCrackersTab);
 	    }
 	    public void registerIcons(IIconRegister iconRegister)
 	    {

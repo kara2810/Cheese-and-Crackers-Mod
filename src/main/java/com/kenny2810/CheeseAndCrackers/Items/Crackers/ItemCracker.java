@@ -7,6 +7,8 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemFood;
 
 
+
+import com.kenny2810.CheeseAndCrackers.CheeseAndCrackersMain;
 import com.kenny2810.CheeseAndCrackers.Entities.EntityCracker;
 
 public class ItemCracker extends ItemFood
@@ -17,8 +19,8 @@ public class ItemCracker extends ItemFood
         super(healamount, feedtoanimals);
         setUnlocalizedName("Cracker");
         setTextureName(modid + ":" + "Cracker");
-        this.maxStackSize = 16;
-        this.setCreativeTab(CreativeTabs.tabFood);
+        this.maxStackSize = 64;
+        this.setCreativeTab(CheeseAndCrackersMain.CheeseAndCrackersTab);
     }
     public void registerIcons(IIconRegister iconRegister)
     {
