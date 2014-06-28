@@ -53,7 +53,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-@Mod(modid="CheeseAndCrackers", name="Cheese And Crackers", version="1.1.0")
+@Mod(modid="CheeseAndCrackers", name="Cheese And Crackers", version="1.1.1")
 public class CheeseAndCrackersMain 
 {
 //Declaration of variables	
