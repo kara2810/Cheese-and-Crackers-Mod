@@ -24,7 +24,7 @@ public class ItemCracker extends ItemFood
     }
     public void registerIcons(IIconRegister iconRegister)
     {
-      itemIcon = iconRegister.registerIcon("CheeseAndCrackers:Cracker");
+      itemIcon = iconRegister.registerIcon("CheeseAndCrackers:cracker");
     }
     
    

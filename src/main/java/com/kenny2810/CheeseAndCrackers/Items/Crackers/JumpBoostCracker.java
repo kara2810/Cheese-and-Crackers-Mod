@@ -29,7 +29,7 @@ import com.kenny2810.CheeseAndCrackers.Entities.EntityCracker;
 	    }
 	    public void registerIcons(IIconRegister iconRegister)
 	    {
-	      itemIcon = iconRegister.registerIcon("CheeseAndCrackers:Cracker");
+	      itemIcon = iconRegister.registerIcon("CheeseAndCrackers:cracker");
 	    }
 	    /**
 	     * Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
