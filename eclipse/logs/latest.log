@@ -1,31 +1,25 @@
-[11:50:05] [main/INFO]: Setting user: Player15
-[11:50:06] [Client thread/INFO]: LWJGL Version: 2.9.0
-[11:50:09] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Cheese And Crackers
-[11:50:10] [Sound Library Loader/INFO]: Sound engine started
-[11:50:10] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[11:50:10] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[11:50:10] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Cheese And Crackers
-[11:50:10] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[11:50:11] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[11:50:12] [Sound Library Loader/INFO]: Sound engine started
-[11:50:12] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
-[11:50:14] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
-[11:50:14] [Server thread/INFO]: Generating keypair
-[11:50:15] [Server thread/INFO]: Preparing start region for level 0
-[11:50:16] [Server thread/INFO]: Player15[local:E:970ca07f] logged in with entity id 175 at (-459.8833067871858, 63.31402860279479, 88.4825760839936)
-[11:50:16] [Server thread/INFO]: Player15 joined the game
-[11:50:16] [Server thread/INFO]: Saving and pausing game...
-[11:50:16] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[11:50:16] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[11:50:16] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[11:50:22] [Server thread/INFO]: Player15 has just earned the achievement [Taking Inventory]
-[11:50:22] [Client thread/INFO]: [CHAT] Player15 has just earned the achievement [Taking Inventory]
-[11:50:30] [Client thread/INFO]: Stopping!
-[11:50:30] [Server thread/INFO]: Stopping server
-[11:50:30] [Server thread/INFO]: Saving players
-[11:50:30] [Server thread/INFO]: Saving worlds
-[11:50:30] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
-[11:50:30] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
-[11:50:30] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
-[11:50:30] [Client Shutdown Thread/INFO]: Stopping server
-[11:50:30] [Client Shutdown Thread/INFO]: Saving players
+[20:42:45] [main/INFO]: Setting user: Player937
+[20:42:46] [Client thread/INFO]: LWJGL Version: 2.9.0
+[20:42:49] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Cheese And Crackers
+[20:42:50] [Sound Library Loader/INFO]: Sound engine started
+[20:42:50] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[20:42:50] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[20:42:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Cheese And Crackers
+[20:42:51] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[20:42:51] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[20:42:52] [Sound Library Loader/INFO]: Sound engine started
+[20:42:53] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[20:42:54] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[20:42:54] [Server thread/INFO]: Generating keypair
+[20:42:54] [Server thread/INFO]: Preparing start region for level 0
+[20:42:56] [Server thread/INFO]: Player937[local:E:60bdb522] logged in with entity id 448 at (-201.01353875240758, 64.0, 135.04802526921688)
+[20:42:56] [Server thread/INFO]: Player937 joined the game
+[20:43:12] [Client thread/INFO]: Stopping!
+[20:43:12] [Server thread/INFO]: Stopping server
+[20:43:12] [Server thread/INFO]: Saving players
+[20:43:12] [Server thread/INFO]: Saving worlds
+[20:43:12] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Overworld
+[20:43:12] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/Nether
+[20:43:12] [Server thread/INFO]: Saving chunks for level 'Copy of New World'/The End
+[20:43:12] [Client Shutdown Thread/INFO]: Stopping server
+[20:43:12] [Client Shutdown Thread/INFO]: Saving players

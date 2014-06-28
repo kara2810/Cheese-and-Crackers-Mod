@@ -2,8 +2,6 @@ package com.kenny2810.CheeseAndCrackers;
 
 // This Import list will grow longer with each additional tutorial.
 // It's not pruned between full class postings, unlike other tutorial code.
-import java.util.logging.Logger;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -12,7 +10,6 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 
 import com.kenny2810.CheeseAndCrackers.Block.blazeBlock;
@@ -29,6 +26,8 @@ import com.kenny2810.CheeseAndCrackers.Items.Cheese.RegenCheese;
 import com.kenny2810.CheeseAndCrackers.Items.Cheese.ResistanceCheese;
 import com.kenny2810.CheeseAndCrackers.Items.Cheese.WaterBreathingCheese;
 import com.kenny2810.CheeseAndCrackers.Items.Crackers.CloudyCracker;
+import com.kenny2810.CheeseAndCrackers.Items.Crackers.CrackerFromHell;
+import com.kenny2810.CheeseAndCrackers.Items.Crackers.EnderCracker;
 import com.kenny2810.CheeseAndCrackers.Items.Crackers.InvisCracker;
 import com.kenny2810.CheeseAndCrackers.Items.Crackers.ItemCracker;
 import com.kenny2810.CheeseAndCrackers.Items.Crackers.JumpBoostCracker;
@@ -64,6 +63,8 @@ public class CheeseAndCrackersMain
 	public static Item KiKiCracker;
 	public static Item CloudyCracker;
 	public static Item LisasCracker;
+	public static Item CrackerFromHell;
+	public static Item EnderCracker;
 	
 	
 //Registering Cheese
@@ -161,6 +162,8 @@ public class CheeseAndCrackersMain
         	SpeedCracker = new SpeedCracker().setUnlocalizedName("Speed Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
         	InvisCracker = new InvisCracker().setUnlocalizedName("Invisibility Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
         	JumpBoostCracker = new JumpBoostCracker().setUnlocalizedName("Jump Boost Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
+        	EnderCracker = new EnderCracker().setUnlocalizedName("The End Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
+        	CrackerFromHell = new CrackerFromHell().setUnlocalizedName("The Cracker from Hell").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
         	
         	// Initialising Cheeses
         	Cracker = new ItemCheese(2, false).setUnlocalizedName("Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cheese");
@@ -200,6 +203,8 @@ public class CheeseAndCrackersMain
         	GameRegistry.registerItem(KiniCracker, "Rune`s Cracker");
         	GameRegistry.registerItem(LisasCracker, "Lisa`s Cracker");
         	GameRegistry.registerItem(KiKiCracker, "Kiki`s Cracker");
+        	GameRegistry.registerItem(EnderCracker, "The End Cracker");
+        	GameRegistry.registerItem(CrackerFromHell, "The Cracker from Hell");
         	
         	//Registering Cheeses
         	GameRegistry.registerItem(Cheese, "Cheese");

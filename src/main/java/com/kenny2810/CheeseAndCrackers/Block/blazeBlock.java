@@ -1,10 +1,10 @@
 package com.kenny2810.CheeseAndCrackers.Block;
 
-import com.kenny2810.CheeseAndCrackers.CheeseAndCrackersMain;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
+import com.kenny2810.CheeseAndCrackers.CheeseAndCrackersMain.*;
+
+import com.kenny2810.CheeseAndCrackers.CheeseAndCrackersMain;
 
 public class blazeBlock extends Block{
 

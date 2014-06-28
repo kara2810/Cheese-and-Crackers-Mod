@@ -24,7 +24,7 @@ import com.kenny2810.CheeseAndCrackers.Entities.EntityCracker;
 	        super();
 	        setUnlocalizedName("Invisibilty Cracker");
 	        setTextureName(modid + ":" + "Cracker");
-	        this.maxStackSize = 16;
+	        this.maxStackSize = 1;
 	        this.setCreativeTab(CheeseAndCrackersMain.CheeseAndCrackersTab);
 	    }
 	    public void registerIcons(IIconRegister iconRegister)
