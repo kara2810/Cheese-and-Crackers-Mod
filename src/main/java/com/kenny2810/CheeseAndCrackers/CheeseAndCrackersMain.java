@@ -2,6 +2,8 @@ package com.kenny2810.CheeseAndCrackers;
 
 // This Import list will grow longer with each additional tutorial.
 // It's not pruned between full class postings, unlike other tutorial code.
+import java.util.Random;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -10,6 +12,9 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.WeightedRandomChestContent;
+import net.minecraftforge.common.ChestGenHooks;
+import net.minecraftforge.common.DungeonHooks;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 
 import com.kenny2810.CheeseAndCrackers.Block.blazeBlock;
@@ -65,6 +70,7 @@ public class CheeseAndCrackersMain
 	public static Item LisasCracker;
 	public static Item CrackerFromHell;
 	public static Item EnderCracker;
+
 	
 	
 //Registering Cheese
@@ -78,6 +84,7 @@ public class CheeseAndCrackersMain
 	public static Item ResistanceCheese;
 	public static Item FireResistCheese;
 	public static Item WaterBreathingCheese;
+	public static Random i;
 
 	
 	//Registering Mod ID
@@ -89,6 +96,8 @@ public class CheeseAndCrackersMain
 	public EntityPlayer gaminggeek24;
     public EntityPlayer Cloudhunter;
     public EntityPlayer kenny2810;
+    
+
 	
     //Registering Blocks
     public static Block blazeBlock = new blazeBlock(Material.rock);
@@ -152,30 +161,30 @@ public class CheeseAndCrackersMain
         	sugarBlock = new sugarBlock(Material.rock).setHardness(2F).setResistance(6F).setBlockName("Sugar Block").setBlockTextureName(CheeseAndCrackersMain.MODID+":"+"sugarBlock");
         	
         	// Initialising Crackers
-        	Cracker = new ItemCracker(2, false).setUnlocalizedName("Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
-        	LisasCracker = new LisasCracker().setUnlocalizedName("Lisa`s Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
-        	CloudyCracker = new CloudyCracker().setUnlocalizedName("Cloudy`s Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
-        	KennyCracker = new KennyCracker().setUnlocalizedName("Kenny`s Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
-        	KiKiCracker = new KiKiCracker().setUnlocalizedName("Kiki`s Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
-        	KiniCracker = new KiniCracker().setUnlocalizedName("Rune`s Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
-        	StrenghtCracker = new StrenghtCracker().setUnlocalizedName("Strenght Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
-        	SpeedCracker = new SpeedCracker().setUnlocalizedName("Speed Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
-        	InvisCracker = new InvisCracker().setUnlocalizedName("Invisibility Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
-        	JumpBoostCracker = new JumpBoostCracker().setUnlocalizedName("Jump Boost Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
-        	EnderCracker = new EnderCracker().setUnlocalizedName("The End Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
-        	CrackerFromHell = new CrackerFromHell().setUnlocalizedName("The Cracker from Hell").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
+        	Cracker = new ItemCracker(2, false).setUnlocalizedName("Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"cracker");
+        	LisasCracker = new LisasCracker().setUnlocalizedName("Lisa`s Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"cracker");
+        	CloudyCracker = new CloudyCracker().setUnlocalizedName("Cloudy`s Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"cracker");
+        	KennyCracker = new KennyCracker().setUnlocalizedName("Kenny`s Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"cracker");
+        	KiKiCracker = new KiKiCracker().setUnlocalizedName("Kiki`s Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"cracker");
+        	KiniCracker = new KiniCracker().setUnlocalizedName("Rune`s Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"cracker");
+        	StrenghtCracker = new StrenghtCracker().setUnlocalizedName("Strenght Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"cracker");
+        	SpeedCracker = new SpeedCracker().setUnlocalizedName("Speed Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"cracker");
+        	InvisCracker = new InvisCracker().setUnlocalizedName("Invisibility Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"cracker");
+        	JumpBoostCracker = new JumpBoostCracker().setUnlocalizedName("Jump Boost Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"cracker");
+        	EnderCracker = new EnderCracker().setUnlocalizedName("The End Cracker").setTextureName(CheeseAndCrackersMain.MODID+":"+"cracker");
+        	CrackerFromHell = new CrackerFromHell().setUnlocalizedName("The Cracker from Hell").setTextureName(CheeseAndCrackersMain.MODID+":"+"cracker");
         	
         	// Initialising Cheeses
-        	Cracker = new ItemCheese(2, false).setUnlocalizedName("Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cheese");
-        	LisasCheese = new LisasCheese().setUnlocalizedName("Lisa`s Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cheese");
-        	CloudysCheese = new CloudyCheese().setUnlocalizedName("Cloudy`s Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cheese");
-        	KennysCheese = new KennyCheese().setUnlocalizedName("Kenny`s Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cheese");
-        	KikisCheese = new KiKiCheese().setUnlocalizedName("Kiki`s Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cheese");
-        	KinisCheese = new KiniCheese().setUnlocalizedName("Rune`s Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cheese");
-        	WaterBreathingCheese = new WaterBreathingCheese().setUnlocalizedName("Water-Breathing Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cheese");
+        	Cracker = new ItemCheese(2, false).setUnlocalizedName("Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"cheese");
+        	LisasCheese = new LisasCheese().setUnlocalizedName("Lisa`s Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"cheese");
+        	CloudysCheese = new CloudyCheese().setUnlocalizedName("Cloudy`s Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"cheese");
+        	KennysCheese = new KennyCheese().setUnlocalizedName("Kenny`s Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"cheese");
+        	KikisCheese = new KiKiCheese().setUnlocalizedName("Kiki`s Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"cheese");
+        	KinisCheese = new KiniCheese().setUnlocalizedName("Rune`s Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"cheese");
+        	WaterBreathingCheese = new WaterBreathingCheese().setUnlocalizedName("Water-Breathing Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"cheese");
         	RegenCheese = new RegenCheese().setUnlocalizedName("Regen Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cracker");
-        	FireResistCheese = new FireResistanceCheese().setUnlocalizedName("Fire-Resistance Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cheese");
-        	ResistanceCheese = new ResistanceCheese().setUnlocalizedName("Resistance Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"Cheese");
+        	FireResistCheese = new FireResistanceCheese().setUnlocalizedName("Fire-Resistance Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"cheese");
+        	ResistanceCheese = new ResistanceCheese().setUnlocalizedName("Resistance Cheese").setTextureName(CheeseAndCrackersMain.MODID+":"+"cheese");
             
         }
         
@@ -237,7 +246,26 @@ public class CheeseAndCrackersMain
             	ItemStack featherBlockStack = new ItemStack(CheeseAndCrackersMain.featherBlock);
             	ItemStack blazeBlockStack = new ItemStack(CheeseAndCrackersMain.blazeBlock);
             	ItemStack sugarBlockStack = new ItemStack(CheeseAndCrackersMain.sugarBlock);
-      
+
+                
+            	//Registering Dungeon Loot (HellCracker)
+            	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(CheeseAndCrackersMain.CrackerFromHell),1,1,5));
+            	ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(CheeseAndCrackersMain.CrackerFromHell),1,1,5));
+            	ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(CheeseAndCrackersMain.CrackerFromHell),1,1,5));
+            	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(CheeseAndCrackersMain.CrackerFromHell),1,1,5));
+            	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(CheeseAndCrackersMain.CrackerFromHell),1,1,5));
+            	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(CheeseAndCrackersMain.CrackerFromHell),1,1,5));
+            	ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(new ItemStack(CheeseAndCrackersMain.CrackerFromHell),1,1,5));
+            	
+            	//Registering Dungeon Loot (EndCracker)
+            	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(CheeseAndCrackersMain.EnderCracker),1,1,5));
+            	ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(CheeseAndCrackersMain.EnderCracker),1,1,5));
+            	ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(CheeseAndCrackersMain.EnderCracker),1,1,5));
+            	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(CheeseAndCrackersMain.EnderCracker),1,1,5));
+            	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(CheeseAndCrackersMain.EnderCracker),1,1,5));
+            	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(CheeseAndCrackersMain.EnderCracker),1,1,5));
+            	ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(new ItemStack(CheeseAndCrackersMain.EnderCracker),1,1,5));
+            	
                 
                 //Recipes for basic cracker and cheese
                 GameRegistry.addShapelessRecipe(new ItemStack(CheeseAndCrackersMain.Cracker, 1),

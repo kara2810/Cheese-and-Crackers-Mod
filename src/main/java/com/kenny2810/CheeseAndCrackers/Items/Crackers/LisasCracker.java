@@ -23,7 +23,7 @@ import com.kenny2810.CheeseAndCrackers.Entities.EntityCracker;
 	    {
 	        super();
 	        setUnlocalizedName("Lisa`s Cracker");
-	        setTextureName(modid + ":" + "Cracker");
+	        setTextureName(modid + ":" + "cracker");
 	        this.maxStackSize = 1;
 	        this.setCreativeTab(CheeseAndCrackersMain.CheeseAndCrackersTab);;
 	    }

@@ -24,7 +24,7 @@ import com.kenny2810.CheeseAndCrackers.Entities.EntityCheese;
 	    {
 	        super();
 	        setUnlocalizedName("Kenny`s Cheese");
-	        setTextureName(modid + ":" + "Cheese");
+	        setTextureName(modid + ":" + "cheese");
 	        this.maxStackSize = 1;
 	        this.setCreativeTab(CheeseAndCrackersMain.CheeseAndCrackersTab);
 	    }

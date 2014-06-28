@@ -17,7 +17,7 @@ import com.kenny2810.CheeseAndCrackers.Entities.EntityCracker;
 	    {
 	        super();
 	        setUnlocalizedName("The Cracker from Hell");
-	        setTextureName(modid + ":" + "Cracker");
+	        setTextureName(modid + ":" + "cracker");
 	        this.maxStackSize = 1;
 	        this.setCreativeTab(CheeseAndCrackersMain.CheeseAndCrackersTab);;
 	    }

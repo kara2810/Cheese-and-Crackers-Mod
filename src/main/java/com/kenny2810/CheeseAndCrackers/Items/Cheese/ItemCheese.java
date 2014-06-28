@@ -18,7 +18,7 @@ public class ItemCheese extends ItemFood
     {
         super(healamount, feedtoanimals);
         setUnlocalizedName("Cheese");
-        setTextureName(modid + ":" + "Cheese");
+        setTextureName(modid + ":" + "cheese");
         this.maxStackSize = 64;
         this.setCreativeTab(CheeseAndCrackersMain.CheeseAndCrackersTab);
     }

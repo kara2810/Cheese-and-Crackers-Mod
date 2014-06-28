@@ -18,7 +18,7 @@ public class ItemCracker extends ItemFood
     {
         super(healamount, feedtoanimals);
         setUnlocalizedName("Cracker");
-        setTextureName(modid + ":" + "Cracker");
+        setTextureName(modid + ":" + "cracker");
         this.maxStackSize = 64;
         this.setCreativeTab(CheeseAndCrackersMain.CheeseAndCrackersTab);
     }
